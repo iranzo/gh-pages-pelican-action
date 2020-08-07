@@ -1,0 +1,21 @@
+name: GitHub Pelican Build Action
+description: This action builds a Pelican site and deploys against GHpages
+
+branding:
+  icon: 'home'
+  color: 'red'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+inputs:
+  GH_PAGES_BRANCH:
+    description: 'override the default `gh-pages` deployment branch'
+    required: false
+    default: 'gh-pages'
+
+  SOURCE_FOLDER:
+    description: 'override the default `content` folder for sources for website'
+    required: false
+    default: 'content'
