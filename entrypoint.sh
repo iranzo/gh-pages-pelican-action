@@ -11,6 +11,7 @@ mkdir -p /github/workspace/ /github/home/.cache/pip
 chmod -R u+rwX,go+rwX,go+rwX /github/workspace/ /github/home/.cache/pip
 
 echo '=================== Prepare pandoc ==================='
+apt-get update
 apt-get -y install pandoc
 
 [ -f requirements.txt ] && pip install -r requirements.txt
