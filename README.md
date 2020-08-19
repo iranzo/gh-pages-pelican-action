@@ -1,6 +1,6 @@
 # GitHub Pages Pelican Action
 
-This action builds a Pelican site and deploys it on github pages
+This action builds a Pelican site and deploys it on GitHub pages
 
 Make sure that requirements such as `requirements.txt` are up to date.
 
