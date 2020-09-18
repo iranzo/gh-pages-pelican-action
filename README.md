@@ -10,3 +10,4 @@ If there's an existing `build.sh` it will be executed to setup extra steps befor
 
 - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
 - `SOURCE_FOLDER` (optional): override the default `content` folder for building the site
+- `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` file for configuring the site publish settings
