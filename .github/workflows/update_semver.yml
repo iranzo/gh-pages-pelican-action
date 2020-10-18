@@ -1,10 +1,12 @@
 name: Update Semver
 on:
   push:
-    branches-ignore:
-      - '**'
     tags:
       - '*.*.*'
+  release:
+     types:
+       - published
+
 jobs:
   update-semver:
     runs-on: ubuntu-latest
