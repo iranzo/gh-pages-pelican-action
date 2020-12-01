@@ -14,6 +14,10 @@ echo '=================== Prepare pandoc ==================='
 apt-get update
 apt-get -y install pandoc
 
+echo '=================== Prepare graphviz ==================='
+apt-get update
+apt-get -y install graphviz
+
 [ -f requirements.txt ] && pip install -r requirements.txt
 
 if [ -f build.sh ]; then
